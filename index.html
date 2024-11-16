@@ -16,6 +16,7 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/main.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -23,10 +24,10 @@
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Início</a></li>
                 <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Cadastrar</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Usuários</a></li>
                 <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -45,7 +46,7 @@
                     <div class="col-lg-10">
                         <h2>Nossa máquina é perfeita na coleta de latinhas para Reciclagem</h2>
                         <p class="lead mb-5">
-                            Teste no seu estabelecimento e ajude a gente
+                            Teste no seu estabelecimento e ajude a gente.
                             <a target="_blank" href="https://www.delfimmoreira.mg.gov.br/">Site Prefeitura</a>
                             !
                         </p>
@@ -61,7 +62,7 @@
                     <h3 class="text-secondary mb-0">Cadastro</h3>
                     <h2 class="mb-5">Cadastrar</h2>
                 </div>
-                <div class="row gx-4 gx-lg-5">
+                <!-- <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
                         <h4><strong>Responsive</strong></h4>
@@ -86,11 +87,24 @@
                         <h4><strong>Question</strong></h4>
                         <p class="text-faded mb-0">I mustache you a question...</p>
                     </div>
-                </div>
+                </div> -->
+                <form id="register">
+                    <div class="form-group ">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Adicione email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName">Nome</label>
+                        <input type="text" class="form-control" id="exampleInputName" placeholder="Nome">
+                    </div>
+                    <button type="submit" class="btn btn-danger mt-2" onclick="salvar()">Salvar</button>
+                </form>
             </div>
         </section>
         <!-- Callout-->
-        <section class="callout">
+        <!-- <section class="callout">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mx-auto mb-5">
                     Welcome to
@@ -99,21 +113,27 @@
                 </h2>
                 <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
             </div>
-        </section>
+        </section> -->
         <!-- Portfolio-->
         <section class="content-section" id="portfolio">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
+                    <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
+                    <h2 class="mb-5">Cadastros recentes</h2>
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Stationary</div>
-                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                                    <div class="h2">Usuário</div>
+                                    <p class="mb-0" id="user1">
+                                        <label for="user1Name" id="">Name:</label>
+                                        <span id="user1Name"></span>
+                                        <br>
+                                        <label for="user1Email" id="">Email:</label>
+                                        <span id="user1Email"></span>
+                                    </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
@@ -123,8 +143,14 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                                    <div class="h2">Usuário</div>
+                                    <p class="mb-0">
+                                        <label for="user2Name" id="">Name:</label>
+                                        <span id="user2Name"></span>
+                                        <br>
+                                        <label for="user2Email" id="">Email:</label>
+                                        <span id="user2Email"></span>
+                                    </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
@@ -134,8 +160,14 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                                    <div class="h2">Usuário</div>
+                                    <p class="mb-0">
+                                        <label for="user3Name" id="">Name:</label>
+                                        <span id="user3Name"></span>
+                                        <br>
+                                        <label for="user3Email" id="">Email:</label>
+                                        <span id="user3Email"></span>
+                                    </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
@@ -145,8 +177,14 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                    <div class="h2">Usuário</div>
+                                    <p class="mb-0">
+                                        <label for="user4Name" id="">Name:</label>
+                                        <span id="user4Name"></span>
+                                        <br>
+                                        <label for="user4Email" id="">Email:</label>
+                                        <span id="user4Email"></span>
+                                    </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
@@ -159,8 +197,8 @@
         <section class="content-section bg-primary text-white">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+                <!-- <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
+                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a> -->
             </div>
         </section>
         <!-- Map-->
@@ -192,5 +230,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- <script>showUsers()</script> -->
+        <script>
+            showUsers();
+        </script>
     </body>
 </html>
