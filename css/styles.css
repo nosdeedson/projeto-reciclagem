@@ -11007,28 +11007,28 @@ footer.footer .social-link:hover {
   }
 }
 .masthead {
-  /* min-height: 30rem;
+  min-height: 30rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
   padding-top: 8rem;
-  padding-bottom: 8rem; */
-  /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  padding-bottom: 8rem; 
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; */
-  width: 100vw; /* Largura total da tela */
-  height: 100vh; /* Altura total da tela */
+  background-size: contain;
+  /* width: 100vw; 
+  height: 100vh; 
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%),
-  url("../assets/img/bg-masthead.jpg"); /* Gradiente + imagem */
-  /* display: flex; */
-  /* justify-content: center;
+  url("../assets/img/bg-masthead.jpg"); 
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;*/
+  text-align: center;
   background-repeat: no-repeat; 
   background-position: center center;
-  background-size: contain;
+  background-size: contain; */
 }
 /* .masthead background {
   width: 100vw; 
